@@ -1,0 +1,162 @@
+<!-- <app-header></app-header> -->
+
+<!-- Module is a collection of components -->
+
+<!-- Angular Interpolation   -->
+<!-- Means accessing the variables of typescript from app.component.ts in app.component.html -->
+
+<h1>Hello world</h1>
+<!-- <h1>{{title}}</h1>
+<h1>{{getName()}}</h1>
+<h1>{{obj.age}}</h1>
+<h1>{{arr}}</h1>
+<h1>{{arr.length}}</h1>
+<h1>{{10+10}}</h1>
+<h1>{{a+10}}</h1>
+<h1>{{siteUrl}}</h1> -->
+
+<!-- We can't access window obj directly inside it -->
+<!-- <h1>{{window.location.href}}</h1>  -->
+<!-- the above statement will give error -->
+
+<!-- <h1><app-user-list></app-user-list></h1>
+<app-login></app-login>
+<app-signup></app-signup> -->
+
+<!-- <button (click)="getHello()">get my name</button>
+<button (click)="getHello()">get name</button> -->
+<!-- <br> -->
+
+<!-- MOUSE EVENTS -->
+<!-- <input type="text" (keyup)="myEvent('keyup event')">
+<br>
+<input type="text" #box (keyup)="myEvent(box.value)">
+<br>
+<input type="text" #box1 (keyup.enter)="myEvent(box1.value)">
+<br>
+<input type="text" #box2 (keyup.space)="myEvent(box2.value)">
+<br>
+<input type="text" #box3 (keydown.space)="myEvent(box3.value)">
+<br>
+<input type="text" #box4  (blur)="myEvent(box4.value)">
+<div 
+(mouseover)="myEvent('mouseOver')"
+style="background-color: blue;">
+<br>
+<br>
+MOUSE EVENTS
+<br>
+<br>
+</div>
+<div 
+(mouseleave)="myEvent('mouseLeave')"
+style="background-color: skyblue;">
+<br>
+<br>
+MOUSE EVENTS
+<br>
+<br>
+</div> -->
+
+
+
+<!-- GET INPUT TEXT -->
+<!-- chl nira ye -->
+<!-- <input type="text" (keyup)="getVal($event.target.value)"/> -->
+<!-- <input type="text" #box />
+ <button (click)="getVal(box.value)"> Get VAlue</button>
+ <h2>{{currentVal}}</h2> -->
+
+
+
+
+ <!-- PROPETY BINDING IN ANGULAR -->
+ <!-- Just we have bind this value property with title variable -->
+ <!-- Both are doing the same job  -->
+ <!-- <input type="text" [disabled]="disabledBox" [value]="title">
+ <br>
+ <br> -->
+ <!-- Interpolation -->
+ <!-- <input type="text" disabled={{disabledBox}} value={{title}}> 
+ <br>
+ <br>
+ <button (click)="enableTextBox()">Enable Textbox</button> -->
+
+
+
+
+ <!-- IF ELSE CONDITION -->
+ <!-- <h1 *ngIf="show=='yes'  else elseblock">If Block</h1>
+ <ng-template #elseblock>
+     <h1>Else Block</h1>
+ </ng-template>
+
+<ng-template [ngIf]="show=='red'">
+    <h1>Red Block</h1>
+</ng-template>
+<ng-template [ngIf]="show=='green'">
+    <h1>Green Block</h1>
+</ng-template>
+<ng-template [ngIf]="show=='blue'">
+    <h1>Blue Block</h1>
+</ng-template> -->
+
+
+
+
+<!-- SWITCH CASE -->
+<!-- <div [ngSwitch]="color">
+    <h2 *ngSwitchCase="'red'">
+        Red Block
+    </h2>
+    <h2 *ngSwitchCase="'green'">
+        Green Block
+    </h2>
+    <h2 *ngSwitchCase="'blue'">
+        blue Block
+    </h2>
+    <h2 *ngSwitchCase="'yellow'">
+        Yellow Block
+    </h2>
+</div> -->
+
+
+
+<!-- FOR LOOP -->
+<!-- <h4 *ngFor="let item of data"> -->
+    <!-- {{item}} -->
+    <!-- {{item.name}}
+    {{item.age}}
+</h4> -->
+
+
+
+<!-- SIMPLE FORM IN ANGULAR -->
+<!-- ngModel make us understand that this input field is connected to this form -->
+<!-- <form #simpleForm="ngForm" (ngSubmit)="getUserValue(simpleForm.value)">
+    <input type="text" ngModel name="username" placeholder="Enter name"><br><br>
+    <input type="text" ngModel name="age" placeholder="Enter age"><br><br>
+    <input type="text" ngModel name="address" placeholder="Enter address"><br><br>
+    <button>Get User Value</button>
+</form> -->
+
+
+
+<!-- Header Footer in Angular -->
+<!-- <app-footer></app-footer> -->
+
+
+
+
+<!-- Normal style and style Binding -->
+<!-- <h1 style="color: blue;">Header 1</h1>
+<h1 [style.color]="'green'">Header 1</h1>
+<h1 [style.color]="color"> Dynamic Style</h1>
+<h1 [style.color]="err?'red':'green'">Conditional Style</h1>
+<button (click)="updateColor()" class="btn btn-success">Change color</button> -->
+
+
+
+
+<!-- SENDING DATA FROM PARENT COMPONENT TO CHILD COMPONENT -->
+<app-header [hero]="data"></app-header>
