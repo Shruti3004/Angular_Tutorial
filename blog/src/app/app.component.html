@@ -159,4 +159,10 @@ MOUSE EVENTS
 
 
 <!-- SENDING DATA FROM PARENT COMPONENT TO CHILD COMPONENT -->
-<app-header [hero]="data"></app-header>
+<!-- <app-header [hero]="data"></app-header> -->
+
+
+
+
+<!-- SENDING DATA FROM CHILD COMPONENT TO PARENT COMPONENT -->
+<app-footer (parentComponent)="parentComponent($event)"></app-footer>

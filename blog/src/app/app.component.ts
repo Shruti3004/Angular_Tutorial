@@ -39,24 +39,24 @@ export class AppComponent {
   // show="blue";
   // color="green";
   // data=['shruti', 'agarwal', 'is', 'the','best']
-  data=[
-    {
-      name: 'Shruti',
-      age:25
-    },
-    {
-      name: 'Peter',
-      age:34
-    },
-    {
-      name: 'Bruce',
-      age:39
-    },
-    {
-      name: 'Sam',
-      age:34
-    }
-  ]
+  // data=[
+  //   {
+  //     name: 'Shruti',
+  //     age:25
+  //   },
+  //   {
+  //     name: 'Peter',
+  //     age:34
+  //   },
+  //   {
+  //     name: 'Bruce',
+  //     age:39
+  //   },
+  //   {
+  //     name: 'Sam',
+  //     age:34
+  //   }
+  // ]
   // getUserValue(value: any){
   //   console.log(value)
   // }
@@ -66,4 +66,7 @@ export class AppComponent {
   //   this.color="blue"
   // }
   // data="xyz"
+  parentComponent(data : any){
+    console.log(data)
+  }
 }
