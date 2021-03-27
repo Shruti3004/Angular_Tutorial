@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Shruti Agarwal';
-  currentVal="";
-  disabledBox=true;
+  currentVal = '';
+  disabledBox = true;
   // name = "Sh"
   // getName(){
   //   return this.name;
@@ -16,14 +16,14 @@ export class AppComponent {
   // obj={
   //   name: 'peter',
   //   age: 20
-  // } 
+  // }
   // getHello(){
   //   alert('hy')
   // }
   // arr=['bruce', 'peter', 'anil'];
   // a=100;
   // b=100;
-  // siteUrl=window.location.href;  
+  // siteUrl=window.location.href;
   // myEvent(evt: any){
   //   console.log(evt);
   // }
@@ -66,7 +66,11 @@ export class AppComponent {
   //   this.color="blue"
   // }
   // data="xyz"
-  parentComponent(data : any){
-    console.log(data)
-  }
+  // parentComponent(data : any){
+  //   console.log(data)
+  // }
+  name = 'Shruti agarwal';
+  date  = Date.now();
+  str="hello angular";
+  val = 10
 }
